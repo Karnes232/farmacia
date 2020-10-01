@@ -1,0 +1,38 @@
+{% extends "pharmacy/layout.html" %}
+{% load static %}
+
+{% block body %}
+<form action="{% url 'create' %}" method="POST">
+    {% csrf_token %}
+    <div class="">
+        <div class="">
+            <h4>Titulo</h4>
+            <div class="form-group">
+                <input autofocus class="form-control" type="text" name="title" placeholder="Titulo" required>
+            </div>
+        </div>
+        <br>
+        <div class="">
+            <h4>Descripcion</h4> 
+            <div class="form-group">
+                <textarea class="form-control" id="description" name="description" rows="4" cols="50" placeholder="Descripcion" required></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="">
+            <h4>Link de Foto</h4>
+            <div class="form-group">
+                <input autofocus class="form-control" type="text" name="photourl" placeholder="Link de Foto" required>
+            </div>
+        </div>
+        <br>
+        <div>
+            <input class="btn btn-primary form-control" type="submit" value="Post">
+        </div>
+    </div>
+</form>
+
+
+
+
+{% endblock %}

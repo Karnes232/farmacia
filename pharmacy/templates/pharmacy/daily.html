@@ -1,0 +1,26 @@
+{% extends "pharmacy/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+<form action="{% url 'cogs' %}" method="POST">
+    {% csrf_token %}
+    <div class="">
+        <div class="">
+            <h4>Venta Diaria</h4>
+            <div class="form-group">
+                <input autofocus class="form-control" type="number" name="sales" placeholder="Venta Diaria" required>
+            </div>
+        </div>
+        <div class="">
+            <h4>Costo de Inventario</h4>
+            <div class="form-group">
+                <input autofocus class="form-control" type="number" name="cost" placeholder="Costo de Inventario" required>
+            </div>
+        </div>
+        <div>
+            <input class="btn btn-primary form-control" type="submit" value="Post">
+        </div>
+    </div>
+</form>
+{% endblock %}

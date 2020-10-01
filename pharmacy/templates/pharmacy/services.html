@@ -1,0 +1,42 @@
+{% extends "pharmacy/layout2.html" %}
+{% load static %}
+{% block body %}
+<div class="groups">
+    <div class="groups-header">
+        <h3>Haga de su salud una prioridad máxima</h3>
+    </div>
+    <div class="group">
+        <div class="group-photo">
+            <img src="{% static 'pharmacy/images/pexels-pixabay-159211.jpg' %}" alt="">
+        </div>
+        <div class="group-inner">
+            <div class="groups-header">
+                <h5>Pregunte a su farmacéutico</h5>
+                <h6>La educación es clave, especialmente cuando se trata de su salud.</h6>
+            </div>
+            <div class="group-item">
+                <p>Su farmacéutico tiene licencia completa para que pueda brindarle información precisa y confiable sobre medicamentos de venta libre para tratar dolencias menores, vitaminas, primeros auxilios y todo lo demás. Ya sea que le hayan recetado un medicamento para ayudar a combatir una infección bacteriana o esté manteniendo su salud con vitaminas, su farmacéutico está allí para responder sus preguntas.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="group">
+        <div class="group-photo">
+            <img src="{% static 'pharmacy/images/natural-medicine-pills.jpg' %}" alt="">
+        </div>
+        <div class="group-inner">
+            <div class="groups-header">
+                <h5>Conocimiento del producto</h5>
+                <h6>No tiene que depender de Internet para responder sus preguntas sobre determinados productos.</h6>
+            </div>
+            <div class="group-item">
+                <p>Su farmacéutico puede brindarle orientación e información sobre una amplia variedad de productos para el cuidado de la salud, incluidos medicamentos, vitaminas, primeros auxilios y todo lo demás. Si tiene problemas para encontrar el medicamento adecuado para la alergia o para combatir el resfriado común, su farmacéutico puede ayudarlo.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+{% endblock %}

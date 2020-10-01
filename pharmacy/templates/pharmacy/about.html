@@ -1,0 +1,32 @@
+{% extends "pharmacy/layout2.html" %}
+{% load static %}
+{% block body %}
+
+<section id="groups">
+    <div class="groups container">
+        <div class="groups-header">
+            <h1 class="section-title">Sobre Nosotros</h1>
+        </div>
+    <div class="all-groups">
+        <div class="group-item">
+            <div class="group-info">
+                <h1>Jose Cedeno</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione neque perferendis cumque aliquid? Temporibus quas soluta minima iure expedita numquam modi, fugiat molestiae reiciendis! Rem accusamus ratione vel at neque laboriosam vitae perspiciatis est officiis?</p>
+            </div>
+            <div class="group-img" id="dark">
+                <img src="{% static 'pharmacy/images/P7080950.JPG' %}" height="350px" alt="">
+            </div>
+        </div>
+        <div class="group-item">
+            <div class="group-info">
+                <h1>Luis</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, praesentium at? Praesentium, ducimus non ullam, fuga voluptatum minima, quos fugiat cumque mollitia in magnam iste velit ipsum? Dolor neque quam ab blanditiis dignissimos, in modi?</p>
+            </div>
+            <div class="group-img" id="dark">
+                <img src="{% static 'pharmacy/images/Imagen024.jpg' %}" height="300px" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

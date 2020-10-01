@@ -1,0 +1,91 @@
+{% extends "pharmacy/layout2.html" %}
+{% load static %}
+{% block body %}
+    <!-- Main Section -->
+    <div class="top">
+    <div class="container-top" >
+        <h1 class="top-line">Nos Importa</h1>
+        <h1>Tu Salud</h1>
+    </div>
+    <div class="map-large">
+        <div class="mapouter1">
+            <div class="gmap_canvas1">
+                <iframe width="370" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Farmacia%20Dra.%20Melo&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a>
+            </div>
+            <style>.mapouter1{position:relative;text-align:right;height:400px;width:370px;}.gmap_canvas1 {overflow:hidden;background:none!important;height:400px;width:370px;}</style>
+        </div>
+    </div>
+    </div>
+    <div class="info">
+    <div class="address">
+        <h5>Direccion</h5>
+        <p>Plaza Oki Doky</p>
+        <p>Hoyo de Fuisa</p>
+    </div>    
+        <table class="table table-striped contact">
+            <tbody>
+                <tr>
+                    <td><a href="tel:+18095520129"><img src="{% static 'pharmacy/images/icons8-phone-24.png' %}" width="30px" alt=""> Telefono: </a></td>
+                    <td><a href="tel:+18095520129">(809) 552-0129</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://api.whatsapp.com/send?phone=18299606470" target="_blank"><img src="{% static 'pharmacy/images/icons8-whatsapp-48.png' %}" width="30px" alt=""> Whatsapp: </a></td>
+                    <td><a href="https://api.whatsapp.com/send?phone=18299606470" target="_blank">(829) 960-6470</a></td>
+                </tr>
+            </tbody>
+        </table>
+    
+    <div class="hour_map">
+        <table class="table table-striped hours">
+            <thead>
+                <tr>
+                    <th class="top-button"><button class="btn btn-primary" type="button" onclick='show();'>
+                        Horario
+                      </button></th>
+                </tr>
+            </thead>
+            <tbody id="hours" style="display: none;">
+                <tr>
+                    <td><img src="{% static 'pharmacy/images/icons8-clock-24.png' %}" width="20px" alt=""> Lunes</td>
+                    <td>7:30 AM to 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'pharmacy/images/icons8-clock-24.png' %}" width="20px" alt=""> Martes</td>
+                    <td>7:30 AM to 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'pharmacy/images/icons8-clock-24.png' %}" width="20px" alt=""> Miercoles</td>
+                    <td>7:30 AM to 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'pharmacy/images/icons8-clock-24.png' %}" width="20px" alt=""> Jueves</td>
+                    <td>7:30 AM to 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'pharmacy/images/icons8-clock-24.png' %}" width="20px" alt=""> Viernes</td>
+                    <td>7:30 AM to 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'pharmacy/images/icons8-clock-24.png' %}" width="20px" alt=""> Sabado</td>
+                    <td>7:30 AM to 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'pharmacy/images/icons8-clock-24.png' %}" width="20px" alt=""> Domingo</td>
+                    <td>7:30 AM to 12:00 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="map">
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="310" height="288" id="gmap_canvas" src="https://maps.google.com/maps?q=Farmacia%20Dra.%20Melo&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://fmovies2.org"></a>
+            </div>
+            <style>.mapouter{position:relative;text-align:right;height:288px;width:310px;}.gmap_canvas {overflow:hidden;background:none!important;height:288px;width:310px;}</style>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
